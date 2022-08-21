@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div class="container">
+        {%for x in obj %}
+        <div class="row">
+            <div class="com-lg-5 col-md- col-12">
+                {{x.name}}
+
+            </div>
+            <div class="com-lg-5 col-md- col-12">
+                {{x.des}}
+
+            </div>
+            {%endfor%}
+  </body>
+</html>
+{% comment %} <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">des</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div> {% endcomment %}
